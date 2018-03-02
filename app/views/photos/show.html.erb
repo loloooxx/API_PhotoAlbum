@@ -1,0 +1,7 @@
+
+<div><%= @photo.title %></div>
+<div><%= @photo.date %></div>
+<div><%= image_tag @photo.file_location.url, class: "img-thumbnail" %></div>
+<div><%= simple_format(@photo.description) %></div>
+
+<div><%= link_to 'Back to index', photos_path %></div>
